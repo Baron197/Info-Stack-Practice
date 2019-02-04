@@ -1,5 +1,8 @@
 import { combineReducers } from 'redux';
+import LibraryReducer from './LibraryReducer';
+import SelectionReducer from './SelectionReducer';
 
 export default combineReducers({
-    kucing: () => ['Mamen', 'Yocoy', 'Yongski', 'Anjay']
+    libraries: LibraryReducer,
+    selectedLibraryId: SelectionReducer
 });
